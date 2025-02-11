@@ -140,9 +140,9 @@ paths:
           required: false
           schema: 
             type: string
-          enum:
-            - application/spdx+json
-            - application/vnd.cyclonedx+json
+            enum:
+              - application/spdx+json
+              - application/vnd.cyclonedx+json
       responses:
         200:
           description: Scan report
@@ -320,7 +320,7 @@ components:
             - "application/vnd.scanner.adapter.vuln.report.harbor+json; version=1.0"
         additional_attributes:
           type: object
-          descriptions: The additional attributes for scanner capabilities. If the type is sbom, then it returns supported media types of the SBOM format.
+          description: The additional attributes for scanner capabilities. If the type is sbom, then it returns supported media types of the SBOM format.
           example: |
             {
               "sbom_media_types": [
